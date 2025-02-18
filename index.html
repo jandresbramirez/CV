@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Agrega FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="icon" type="image/svg+xml" href="documento.svg">
+</head>
+<body>
+    <!-- Ventana emergente inicial -->
+    <div id="popup" class="ventana-emergente">
+        <div class="contenido-ventana">
+            <h1>¡Bienvenido A Mi Hoja De Vida Digital!</h1>
+            <button id="startButton">Ver Hoja de Vida</button>
+        </div>
+    </div>
+
+    <!-- Contenedor principal de la hoja de vida -->
+    <div id="resume" class="hoja-de-vida oculto">
+        <!-- Pestañas de navegación -->
+		<nav class="pestanas">
+			<button class="boton-pestana activo" data-section="personal">
+				<i class="fas fa-user"></i> <!-- Ícono de FontAwesome -->
+				<span>Descripción</span>
+			</button>
+			<button class="boton-pestana" data-section="habilidades">
+				<i class="fas fa-code"></i>
+				<span>Habilidades</span>
+			</button>
+			<button class="boton-pestana" data-section="experiencia">
+				<i class="fas fa-briefcase"></i>
+				<span>Experiencia</span>
+			</button>
+			<button class="boton-pestana" data-section="educacion">
+				<i class="fas fa-graduation-cap"></i> <!-- Ícono de educación -->
+				<span>Educación</span>
+			</button>
+			<button class="boton-pestana" data-section="proyectos">
+				<i class="fas fa-project-diagram"></i>
+				<span>Proyectos</span>
+			</button>
+		</nav>
+
+        <!-- Secciones -->
+        <div class="contenedor-secciones">
+            <!-- Sección 1: Descripción Personal -->
+            <section id="personal" class="seccion">
+                <h2>Descripción Personal</h2>
+                <div class="contenido">
+                    <!-- Columna izquierda: Foto y datos de contacto -->
+                    <div class="columna-izquierda">
+                        <div class="contenedor-imagen">
+                            <img src="Cartoonify.png" alt="Foto del creador" class="imagen-perfil">
+                        </div>
+                        <div class="info-contacto">
+                            <p><strong>Nombre:</strong> Jorge Andrés Ballen Ramírez</p>
+                            <p><strong>Correo:</strong> <a href="andresballen527@gmail.com">andresballen527@gmail.com</a></p>
+                            <p><strong>Dirección:</strong> Bogotá D.C. , Colombia</p>
+                            <p><strong>Fecha de Nacimiento:</strong> 06/09/2004</p>
+                            <p><strong>Teléfono:</strong> +57 310 3067973</p>
+                            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/andresssss">linkedin.com/in/andresssss</a></p>
+                        </div>
+                    </div>
+                    <!-- Línea divisora vertical -->
+                    <div class="divisor"></div>
+                    <!-- Columna derecha: Descripción personal -->
+                    <div class="columna-derecha">
+                        <p>
+                            Tengo 19 años, vivo en la localidad Rafael Uribe Uribe (18), barrio El Triunfo; actualmente estoy cursando un tecnólogo en 
+							Desarrollo de Software en la Universidad de San Buenaventura horario nocturno. Soy una persona responsable y organizada, 
+							comprometido con mis responsabilidades laborales y académicas. Siempre busco expandir mis conocimientos y experiencias al máximo 
+							para dar todo mi potencial posteriormente. 
+                        </p>
+                        <p>
+                             Destaco por habilidades como el pensamiento lógico analítico, trabajo en equipo, habilidades ofimáticas y matemáticas, y una capacidad 
+							 de adaptación increíble. Estoy dispuesto a aportar mi energía, creatividad y dedicación a cualquier tarea que se me asigne, 
+							 contribuyendo positivamente al éxito del equipo y de la organización. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+	
+			<!-- Sección 2: Habilidades -->
+			<section id="habilidades" class="seccion oculto">
+				<h2>Habilidades Sociales</h2>
+				<div class="contenido">
+					<ul class="lista-habilidades">
+						<!-- Columna 1 -->
+						<li>
+							<span>Pensamiento Análitico</span>
+							<div class="contenedor-habilidad">
+								<div class="barra-habilidad">
+									<div class="nivel-habilidad" style="width: 93%;"></div>
+								</div>
+								<span class="porcentaje-habilidad">93%</span>
+							</div>
+						</li>
+						<li>
+							<span>Trabajo en Equipo</span>
+							<div class="contenedor-habilidad">
+								<div class="barra-habilidad">
+									<div class="nivel-habilidad" style="width: 80%;"></div>
+								</div>
+								<span class="porcentaje-habilidad">80%</span>
+							</div>
+						</li>
+						<li>
+							<span>Planificación y Organización</span>
+							<div class="contenedor-habilidad">
+								<div class="barra-habilidad">
+									<div class="nivel-habilidad" style="width: 95%;"></div>
+								</div>
+								<span class="porcentaje-habilidad">95%</span>
+							</div>
+						</li>
+
+						<!-- Columna 2 -->
+						<li>
+							<span>Habilidades Matemáticas</span>
+							<div class="contenedor-habilidad">
+								<div class="barra-habilidad">
+									<div class="nivel-habilidad" style="width: 98%;"></div>
+								</div>
+								<span class="porcentaje-habilidad">98%</span>
+							</div>
+						</li>
+						<li>
+							<span>Rigurosidad y Detalle</span>
+							<div class="contenedor-habilidad">
+								<div class="barra-habilidad">
+									<div class="nivel-habilidad" style="width: 90%;"></div>
+								</div>
+								<span class="porcentaje-habilidad">90%</span>
+							</div>
+						</li>
+						<li>
+							<span>Servicio y Empatía</span>
+							<div class="contenedor-habilidad">
+								<div class="barra-habilidad">
+									<div class="nivel-habilidad" style="width: 85%;"></div>
+								</div>
+								<span class="porcentaje-habilidad">85%</span>
+							</div>
+						</li>
+
+						<!-- Columna 3 -->
+						<li>
+							<span>Lectura y Escritura</span>
+							<div class="contenedor-habilidad">
+								<div class="barra-habilidad">
+									<div class="nivel-habilidad" style="width: 95%;"></div>
+								</div>
+								<span class="porcentaje-habilidad">95%</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<h2>Habilidades Tecnológicas</h2>
+				<div class="contenido">
+					<ul class="lista-habilidades">
+						<!-- Columna 1 -->
+						<li>
+							<span>HTML</span>
+							<div class="contenedor-habilidad">
+								<div class="barra-habilidad">
+									<div class="nivel-habilidad" style="width: 85%;"></div>
+								</div>
+								<span class="porcentaje-habilidad">85%</span>
+							</div>
+						</li>
+						<li>
+							<span>CSS</span>
+							<div class="contenedor-habilidad">
+								<div class="barra-habilidad">
+									<div class="nivel-habilidad" style="width: 70%;"></div>
+								</div>
+								<span class="porcentaje-habilidad">70%</span>
+							</div>
+						</li>
+						<li>
+							<span>JavaScript</span>
+							<div class="contenedor-habilidad">
+								<div class="barra-habilidad">
+									<div class="nivel-habilidad" style="width: 65%;"></div>
+								</div>
+								<span class="porcentaje-habilidad">65%</span>
+							</div>
+						</li>
+
+						<!-- Columna 2 -->
+						<li>
+							<span>Python</span>
+							<div class="contenedor-habilidad">
+								<div class="barra-habilidad">
+									<div class="nivel-habilidad" style="width: 80%;"></div>
+								</div>
+								<span class="porcentaje-habilidad">80%</span>
+							</div>
+						</li>
+						<li>
+							<span>Jupyter</span>
+							<div class="contenedor-habilidad">
+								<div class="barra-habilidad">
+									<div class="nivel-habilidad" style="width: 80%;"></div>
+								</div>
+								<span class="porcentaje-habilidad">80%</span>
+							</div>
+						</li>
+						<li>
+							<span>Java</span>
+							<div class="contenedor-habilidad">
+								<div class="barra-habilidad">
+									<div class="nivel-habilidad" style="width: 60%;"></div>
+								</div>
+								<span class="porcentaje-habilidad">60%</span>
+							</div>
+						</li>
+
+						<!-- Columna 3 -->
+						<li>
+							<span>C | C++</span>
+							<div class="contenedor-habilidad">
+								<div class="barra-habilidad">
+									<div class="nivel-habilidad" style="width: 70%;"></div>
+								</div>
+								<span class="porcentaje-habilidad">70%</span>
+							</div>
+						</li>
+						<li>
+							<span>SQL</span>
+							<div class="contenedor-habilidad">
+								<div class="barra-habilidad">
+									<div class="nivel-habilidad" style="width: 90%;"></div>
+								</div>
+								<span class="porcentaje-habilidad">90%</span>
+							</div>
+						</li>
+						<li>
+							<span>Excel</span>
+							<div class="contenedor-habilidad">
+								<div class="barra-habilidad">
+									<div class="nivel-habilidad" style="width: 80%;"></div>
+								</div>
+								<span class="porcentaje-habilidad">80%</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+            <!-- Sección 3: Experiencia -->
+            <section id="experiencia" class="seccion oculto">
+                <h2>Experiencia</h2>
+                <div class="contenido">
+                    <ul>
+                        <li>
+                            <strong>Empresa Del Cerro SAS</strong>
+                            <p>Picking y Packing | 2023 - 2024</p>
+                            <p>Responsabilidades: Empaquetar productos de diversas marcas y organizar su envio.</p>
+                        </li>
+                        <li>
+                            <strong>Empresa RGIS</strong>
+                            <p>Contador de Mercancia | 2024 - Presente</p>
+                            <p>Responsabilidades: Organización previa de tiendas y conteo.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+			
+			<!-- Sección 4: Educación -->
+			<section id="educacion" class="seccion oculto">
+				<h2>Educación</h2>
+				<div class="contenido">
+					<ul class="lista-educacion">
+						<li>
+							<strong>Bachiller Acádemico</strong>
+							<p>IED Colegio Reino de Holanda</p>
+							<p>2021 - 2023</p>
+						</li>
+						<li>
+							<strong>Tecnología en Desarrollo de Software</strong>
+							<p>Universidad de San Buenaventura Bogotá D.C.</p>
+							<p>2023 - Presente</p>
+						</li>
+						<li>
+							<strong>Especialización en Data Science Fundaments with Python and SQL </strong>
+							<p>Plataforma de Cursos Online (Coursera)</p>
+							<p>2024</p>
+						</li>
+						<li>
+							<strong>Certificación en Manejo y Gestión de Labores Administrativas con Excel</strong>
+							<p>Curso Virtual SENA SOFIA PLUS</p>
+							<p>2024</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			
+            <!-- Sección 5: Proyectos -->
+            <section id="proyectos" class="seccion oculto">
+                <h2>Proyectos</h2>
+                <div class="contenido">
+                    <ul>
+                        <li>
+                            <strong><a href="proximamente....">Portafolio Personal</a></strong>
+                            <p>Al dar click a este enlace proximamente te llevará a una página en la que se almacenan 
+							todos los proyectos diseñados durante mi etapa en la universidad. PROXIMAMENTE....</p>
+                        </li>
+                        <li>
+                            <strong><a href="proximamente....">Proyecto Final UNIVERSIDAD</a></strong>
+                            <p>Al dar Click en este enlace te llevará a la página oficial de nuestro proyecto de graduación 
+							BOSS BUDGET. PROXIMAMENTE....</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

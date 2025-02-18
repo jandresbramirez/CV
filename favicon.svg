@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+    <!-- Cabeza del gato -->
+    <circle cx="50" cy="50" r="45" fill="#FFD700" stroke="#000" stroke-width="2"/>
+    
+    <!-- Orejas -->
+    <polygon points="30,20 50,10 70,20" fill="#FFD700" stroke="#000" stroke-width="2"/>
+    <polygon points="70,20 90,10 80,30" fill="#FFD700" stroke="#000" stroke-width="2"/>
+    
+    <!-- Ojos -->
+    <circle cx="40" cy="45" r="5" fill="#000"/>
+    <circle cx="60" cy="45" r="5" fill="#000"/>
+    
+    <!-- Nariz -->
+    <polygon points="50,55 45,60 55,60" fill="#FF6347"/>
+    
+    <!-- Boca -->
+    <path d="M 45 65 Q 50 70 55 65" stroke="#000" stroke-width="2" fill="none"/>
+    
+    <!-- Bigotes -->
+    <line x1="30" y1="55" x2="45" y2="55" stroke="#000" stroke-width="2"/>
+    <line x1="55" y1="55" x2="70" y2="55" stroke="#000" stroke-width="2"/>
+    <line x1="30" y1="60" x2="45" y2="60" stroke="#000" stroke-width="2"/>
+    <line x1="55" y1="60" x2="70" y2="60" stroke="#000" stroke-width="2"/>
+  </svg>
